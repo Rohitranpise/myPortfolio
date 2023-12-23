@@ -1,0 +1,29 @@
+/* ImageSlider.css */
+
+.image-slider {
+    overflow: hidden;
+    display: flex;
+    /* Hide overflowing content */
+    justify-content: center;
+    width: 100%;
+    height: 800px;
+    /* Set the height according to your design */
+}
+
+img {
+    width: 100%;
+    height: 1015px;
+    object-fit: cover;
+    position: absolute;
+    transition: transform 0.5s ease;
+    /* Add transition for smooth animation */
+}
+
+.active {
+    transform: translateX(0);
+    /* Initial position */
+}
+
+/* .active+img {
+    transform: translateX(100%);
+} */
